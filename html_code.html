@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management</title>
+    <link rel="stylesheet" href="css_file.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Management</h1>
+        <div class="time-picker">
+            <div>
+                <label for="start-time">From:</label>
+                <input type="time" id="start-time">
+                <select id="start-meridiem">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <span>to</span>
+            <div>
+                <label for="end-time">To:</label>
+                <input type="time" id="end-time">
+                <select id="end-meridiem">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+        </div>
+        <div class="time-slots">
+            <!-- Time slots will be dynamically added here -->
+        </div>
+        <button id="add-time-slot">Add Time Slot</button>
+    </div>
+    <script src="javascript_file.js"></script>
+</body>
+</html>
